@@ -1,9 +1,8 @@
 import requests
-from ..lib.classes.db import Session, engine, Base  # Importação relativa
-from ..lib.classes.models import Pokemon  # Importação relativa
-from ..lib.contracts.schema import PokemonSchema  # Importação relativa
+from lib.classes.db import Session, engine, Base
+from lib.classes.models import Pokemon
+from lib.contracts.schema import PokemonSchema
 
-# Resto do seu código...
 
 Base.metadata.create_all(bind=engine)
 
